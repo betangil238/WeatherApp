@@ -1,0 +1,10 @@
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\integration\WeatherAppEndToEndTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\service\WeatherServiceTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\client\OpenMeteoClientErrorTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\service\WeatherServiceValidationTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\service\WeatherServiceEdgeCasesTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\service\WeatherServiceIntegrationTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\cache\WeatherCacheTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\client\OpenMeteoClientGeocodeTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\service\CachedWeatherServiceTest.java
+C:\Users\betan\weather-app\src\test\java\com\weatherapp\client\OpenMeteoClientWeatherTest.java

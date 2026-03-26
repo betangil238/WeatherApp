@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.weatherapp.client.OpenMeteoClientGeocodeTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.694 s - in com.weatherapp.client.OpenMeteoClientGeocodeTest

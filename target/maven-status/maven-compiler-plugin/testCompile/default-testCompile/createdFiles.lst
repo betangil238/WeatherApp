@@ -1,0 +1,11 @@
+com\weatherapp\service\WeatherServiceIntegrationTest.class
+com\weatherapp\client\OpenMeteoClientErrorTest.class
+com\weatherapp\service\WeatherServiceValidationTest.class
+com\weatherapp\service\CachedWeatherServiceTest.class
+com\weatherapp\cache\WeatherCacheTest.class
+com\weatherapp\client\OpenMeteoClientGeocodeTest.class
+com\weatherapp\client\OpenMeteoClientWeatherTest.class
+com\weatherapp\service\WeatherServiceEdgeCasesTest.class
+com\weatherapp\service\WeatherServiceTest.class
+com\weatherapp\integration\WeatherAppEndToEndTest.class
+com\weatherapp\service\WeatherServiceTest$MockOpenMeteoClient.class

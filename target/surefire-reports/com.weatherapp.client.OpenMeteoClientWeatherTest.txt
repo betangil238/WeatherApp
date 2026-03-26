@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.weatherapp.client.OpenMeteoClientWeatherTest
+-------------------------------------------------------------------------------
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.134 s - in com.weatherapp.client.OpenMeteoClientWeatherTest

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Pronóstico del Clima en Tiempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado -->
+    <div class="animated-background"></div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🌍 Weather App</h1>
+                <p class="subtitle">Pronóstico del Clima en Tiempo Real</p>
+            </div>
+        </header>
+
+        <!-- Controles principales -->
+        <section class="controls-section">
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="single">
+                    <span class="icon">🔍</span>
+                    <span>Una Ciudad</span>
+                </button>
+                <button class="mode-btn" data-mode="multiple">
+                    <span class="icon">📊</span>
+                    <span>Comparar Ciudades</span>
+                </button>
+            </div>
+
+            <!-- Selector de temperatura -->
+            <div class="temperature-unit-selector">
+                <label>Unidad de Temperatura:</label>
+                <div class="unit-buttons">
+                    <button class="unit-btn active" data-unit="celsius">°C</button>
+                    <button class="unit-btn" data-unit="fahrenheit">°F</button>
+                    <button class="unit-btn" data-unit="kelvin">K</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modo: Una Ciudad -->
+        <section class="mode-content active" id="single-mode">
+            <div class="search-container">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="city-input" 
+                        class="city-input" 
+                        placeholder="Ingresa el nombre de una ciudad..."
+                        autocomplete="off"
+                    >
+                    <button class="search-btn" id="search-btn">
+                        <span>🔍 Buscar</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Resultados weather actual -->
+            <div id="single-result" class="result-container"></div>
+        </section>
+
+        <!-- Modo: Múltiples Ciudades -->
+        <section class="mode-content" id="multiple-mode">
+            <div class="multiple-search-container">
+                <div class="cities-input-section">
+                    <div class="city-input-group">
+                        <input 
+                            type="text" 
+                            id="cities-input" 
+                            class="cities-input" 
+                            placeholder="Ingresa ciudades (separadas por coma)..."
+                            autocomplete="off"
+                        >
+                        <button class="add-city-btn" id="add-cities-btn">
+                            <span>➕ Agregar</span>
+                        </button>
+                    </div>
+
+                    <!-- Lista de ciudades ingresadas -->
+                    <div class="cities-list-container">
+                        <div id="cities-list" class="cities-list"></div>
+                        <button class="compare-btn" id="compare-btn" style="display:none;">
+                            <span>📊 Comparar Clima</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultados comparativos -->
+            <div id="multiple-result" class="result-container"></div>
+        </section>
+
+        <!-- Sección de Pronóstico (5 días) -->
+        <section class="forecast-section">
+            <div class="forecast-header">
+                <h2>📅 Pronóstico de 5 Días</h2>
+                <div class="forecast-controls">
+                    <input 
+                        type="text" 
+                        id="forecast-city-input" 
+                        class="forecast-input" 
+                        placeholder="Ciudad para pronóstico..."
+                        autocomplete="off"
+                    >
+                    <button class="forecast-btn" id="forecast-btn">Obtener Pronóstico</button>
+                </div>
+            </div>
+            <div id="forecast-result" class="forecast-container"></div>
+        </section>
+
+        <!-- Estado de carga -->
+        <div id="loading" class="loading" style="display:none;">
+            <div class="loader"></div>
+            <p>Obteniendo datos del clima...</p>
+        </div>
+
+        <!-- Área de mensajes de error -->
+        <div id="error-message" class="error-message" style="display:none;"></div>
+
+        <!-- Área de mensajes de éxito -->
+        <div id="success-message" class="success-message" style="display:none;"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Weather App © 2026 | Datos proveídos por Open-Meteo API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
