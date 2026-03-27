@@ -4,6 +4,8 @@ Una aplicación de consola en Java que consulta datos climáticos en tiempo real
 
 ---
 
+Video explicativo https://drive.google.com/file/d/19V4HOpdUQmiZmGdlIk3Tp0qEEJlnba67/view?usp=sharing  
+
 ## 📋 Características
 
 ✅ **Búsqueda de clima por ciudad** - Ingresa el nombre de cualquier ciudad  
@@ -597,10 +599,7 @@ Cada capa maneja sus propias excepciones y propaga al siguiente nivel con contex
 
 **Próximas mejoras:**
 
-- [ ] Caché de consultas recientes
 - [ ] Pronóstico de 7 días
-- [ ] Búsqueda de múltiples ciudades simultáneamente
-- [ ] Interfaz gráfica (Swing/JavaFX)
 - [ ] Exportar a CSV/JSON
 - [ ] Notificaciones de alerta (lluvia, frio, etc.)
 - [ ] Historial de búsquedas
@@ -631,7 +630,3 @@ Si encuentras problemas:
 1. Verifica los logs en consola (prefijos [TAG])
 2. Consulta la sección Troubleshooting
 3. Abre un issue en el repositorio
-
----
-
-**¡Disfruta consultando el clima! 🌤️**
